@@ -1,0 +1,911 @@
+/* ===========================
+   Reset
+=========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins, sans-serif;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body {
+
+    background: #f6f7fb;
+
+}
+
+/* ===========================
+   Main Dashboard
+=========================== */
+
+.dashboard {
+
+    display: flex;
+
+    min-height: 100vh;
+
+    width: 100%;
+
+    background: linear-gradient(135deg,
+            #6B5BFF,
+            #7B61FF,
+            #9C6BFF,
+            #FF5CA8);
+
+}
+
+/* ===========================
+   Sidebar
+=========================== */
+
+.sidebar {
+
+    width: 280px;
+
+    background: rgba(255, 255, 255, .18);
+
+    backdrop-filter: blur(18px);
+
+    border-right: 1px solid rgba(255, 255, 255, .2);
+
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 30px 22px;
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo-section {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 40px;
+
+}
+
+/* ==========================================
+   Logo Circle
+========================================== */
+
+.logo-circle {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(135deg,
+            #6B5BFF,
+            #7B61FF,
+            #9C6BFF,
+            #FF5CA8);
+
+    color: white;
+
+    font-size: 22px;
+
+    font-weight: 700;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 10px 25px rgba(107, 91, 255, .35);
+
+}
+
+.logo-section h2 {
+
+    color: white;
+
+    font-size: 24px;
+
+    font-weight: 700;
+
+}
+
+.logo-section p {
+
+    color: white;
+
+    opacity: .8;
+
+    font-size: 13px;
+
+}
+
+/* ===========================
+   Menu
+=========================== */
+
+.menu {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
+
+}
+
+/* ===========================
+   Sidebar Menu Item
+=========================== */
+
+.menu-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 15px 18px;
+
+    border-radius: 16px;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+
+    font-size: 17px;
+
+    font-weight: 500;
+
+}
+
+/* Hover Effect */
+
+.menu-item:hover {
+
+    background: rgba(255, 255, 255, .18);
+
+    transform: translateX(6px);
+
+}
+
+/* ===========================
+   Active Menu
+=========================== */
+
+.active {
+
+    background: white;
+
+    color: #6B5BFF;
+
+    font-weight: 700;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, .12);
+
+}
+
+/* ===========================
+   Logout Button
+=========================== */
+
+.logout-btn {
+
+    margin-top: 18px;
+
+    border: none;
+
+    background: white;
+
+    color: #6B5BFF;
+
+    padding: 15px;
+
+    border-radius: 15px;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 10px;
+
+    transition: .3s;
+
+}
+
+.logout-btn:hover {
+
+    background: #FF5CA8;
+
+    color: white;
+
+}
+
+/* ===========================
+   Main Content
+=========================== */
+
+.main-content {
+
+    flex: 1;
+
+    padding: 40px;
+
+    overflow-y: auto;
+
+}
+
+/* ==========================================
+   Welcome Section
+========================================== */
+
+.welcome-card {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 40px;
+
+    flex-wrap: wrap;
+
+    background: rgba(255, 255, 255, .18);
+
+    backdrop-filter: blur(18px);
+
+    border-radius: 28px;
+
+    padding: 45px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .12);
+
+    transition: .35s;
+
+}
+
+/* Left */
+
+.welcome-left {
+
+    flex: 1;
+
+    min-width: 320px;
+
+}
+
+.welcome-badge {
+
+    display: inline-block;
+
+    padding: 10px 18px;
+
+    background: white;
+
+    color: #6B5BFF;
+
+    border-radius: 30px;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
+
+}
+
+.welcome-card:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.welcome-left h1 {
+
+    color: white;
+
+    font-size: 42px;
+
+    margin-bottom: 18px;
+
+}
+
+.welcome-left p {
+
+    color: white;
+
+    line-height: 32px;
+
+    font-size: 18px;
+
+    max-width: 620px;
+
+}
+
+/* Buttons */
+
+.welcome-buttons {
+
+    display: flex;
+
+    gap: 18px;
+
+    margin-top: 35px;
+
+}
+
+.create-btn {
+
+    border: none;
+
+    padding: 15px 28px;
+
+    border-radius: 14px;
+
+    background: white;
+
+    color: #6B5BFF;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.create-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:#f8f8ff;
+
+}
+
+.resume-btn {
+
+    border: 2px solid rgba(255, 255, 255, .30);
+
+    background: transparent;
+
+    color: white;
+
+    padding: 15px 28px;
+
+    border-radius: 14px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+.resume-btn:hover{
+
+    background:white;
+
+    color:#6B5BFF;
+
+    transform:translateY(-3px);
+
+}
+
+/* Right */
+
+.welcome-right {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex: 1;
+
+    min-width: 280px;
+
+}
+
+.resume-preview {
+
+    width: 300px;
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .15);
+
+}
+
+.resume-icon {
+
+    font-size: 70px;
+
+    margin-bottom: 15px;
+
+}
+
+.resume-preview h2 {
+
+    color: #6B5BFF;
+
+    margin-bottom: 12px;
+
+}
+
+.resume-preview p {
+
+    color: #666;
+
+    line-height: 28px;
+
+}
+
+/* ==========================================
+   Feature Section
+========================================== */
+
+.feature-section {
+
+    margin-top: 45px;
+
+    display: grid;
+
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 28px;
+
+}
+
+/* ==========================================
+   Feature Card
+========================================== */
+
+.feature-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
+
+    transition: .35s;
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-10px);
+
+    box-shadow: 0 22px 45px rgba(0, 0, 0, .18);
+
+}
+
+/* ==========================================
+   Icon
+========================================== */
+
+.feature-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 20px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 34px;
+
+    margin-bottom: 20px;
+
+}
+
+/* Icon Colors */
+
+.purple {
+
+    background: #EEE8FF;
+
+}
+
+.blue {
+
+    background: #E6F3FF;
+
+}
+
+.pink {
+
+    background: #FFE8F4;
+
+}
+
+.orange {
+
+    background: #FFF1E5;
+
+}
+
+/* ==========================================
+   Heading
+========================================== */
+
+.feature-card h3 {
+
+    color: #4F46E5;
+
+    font-size: 22px;
+
+    margin-bottom: 12px;
+
+}
+
+/* ==========================================
+   Paragraph
+========================================== */
+
+.feature-card p {
+
+    color: #666;
+
+    line-height: 28px;
+
+    margin-bottom: 22px;
+
+}
+
+/* ==========================================
+   Button
+========================================== */
+
+.feature-card button {
+
+    border: none;
+
+    background: linear-gradient(90deg,
+            #6B5BFF,
+            #FF5CA8);
+
+    color: white;
+
+    padding: 12px 22px;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+.feature-card button:hover {
+
+    transform: scale(1.05);
+
+}
+
+.feature-card:hover {
+
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+        0 25px 50px rgba(107, 91, 255, .20);
+
+}
+
+/* ==========================================
+   Bottom Section
+========================================== */
+
+.bottom-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 28px;
+
+    margin-top: 40px;
+
+}
+
+/* ==========================================
+   Common Card Style
+========================================== */
+
+.progress-card,
+.activity-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    padding: 30px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, .12);
+
+}
+
+/* ==========================================
+   Card Heading
+========================================== */
+
+.progress-card h2,
+.activity-card h2 {
+
+    color: #5B5CF0;
+
+    margin-bottom: 15px;
+
+}
+
+.progress-card:hover,
+.activity-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(107,91,255,.18);
+
+}
+/* ==========================================
+   Progress Bar
+========================================== */
+
+.progress-bar {
+
+    width: 100%;
+
+    height: 18px;
+
+    background: #ececec;
+
+    border-radius: 30px;
+
+    overflow: hidden;
+
+    margin: 20px 0;
+
+}
+
+/* Filled Progress */
+
+.progress-fill {
+
+    width: 80%;
+
+    height: 100%;
+
+    background: linear-gradient(90deg,
+            #6B5BFF,
+            #FF5CA8);
+
+    color: white;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-size: 12px;
+
+    font-weight: 600;
+
+}
+
+/* ==========================================
+   Activity List
+========================================== */
+
+.activity-card ul {
+
+    list-style: none;
+
+    margin-top: 15px;
+
+}
+
+.activity-card li {
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eeeeee;
+
+    color: #555;
+
+    font-size: 15px;
+
+}
+
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:900px) {
+
+    .bottom-section {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+/* ===========================
+   Enable Page Scroll
+=========================== */
+
+html,
+body,
+#root {
+
+    width: 100%;
+
+    min-height: 100%;
+
+    overflow-x: hidden;
+
+    overflow-y: auto;
+
+}
+
+.dashboard {
+
+    min-height: 100vh;
+
+    height: auto;
+
+}
+
+.main-content {
+
+    flex: 1;
+
+    overflow-y: visible;
+
+}
+
+/* ==========================================
+   Smooth Animation
+========================================== */
+
+* {
+
+    scroll-behavior: smooth;
+
+}
+
+button {
+
+    transition: all .3s ease;
+
+}
+
+.feature-card,
+.resume-preview,
+.progress-card,
+.activity-card {
+
+    transition: all .35s ease;
+
+}
+.progress-card:hover,
+.activity-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:
+    0 20px 40px rgba(107,91,255,.18);
+
+}
+/* ==========================================
+   Responsive
+========================================== */
+
+@media(max-width:1100px){
+
+    .dashboard{
+
+        flex-direction:column;
+
+    }
+
+    .sidebar{
+
+        width:100%;
+
+        position:relative;
+
+    }
+
+    .welcome-card{
+
+        flex-direction:column;
+
+        text-align:center;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .feature-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .bottom-section{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .welcome-left h1{
+
+        font-size:32px;
+
+    }
+
+}
+/* ==========================================
+   Footer
+========================================== */
+
+.dashboard-footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:white;
+
+    opacity:.8;
+
+    padding:20px;
+
+    font-size:15px;
+
+}
