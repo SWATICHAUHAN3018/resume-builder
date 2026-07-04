@@ -95,7 +95,10 @@ function Dashboard() {
                         <span>Dashboard</span>
                     </div>
 
-                    <div className="menu-item">
+                    <div
+                        className="menu-item"
+                        onClick={() => navigate("/create-resume")}
+                    >
                         <FaFileAlt />
                         <span>Create Resume</span>
                     </div>
@@ -172,7 +175,10 @@ function Dashboard() {
 
                         <div className="welcome-buttons">
 
-                            <button className="create-btn">
+                            <button
+                                className="create-btn"
+                                onClick={() => navigate("/create-resume")}
+                            >
 
                                 Create Resume
 
