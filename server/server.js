@@ -1,3 +1,4 @@
+const resumeRoutes = require("./routes/resumeRoutes");
 const express = require("express");
 const dotenv = require("dotenv");
 const cors = require("cors");
@@ -20,6 +21,7 @@ app.use(express.json());
 
 // Routes
 app.use("/api/auth", authRoutes);
+app.use("/api/resume", resumeRoutes);
 
 // Test Route
 app.get("/", (req, res) => {
